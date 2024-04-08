@@ -1,0 +1,20 @@
+Who you are
+Aspiring backend developer who’s excited to work on large scale challenges with cutting-edge technology
+Proficiency in coding with at least one language (Java, Scala, Python,Typescript, Nodejs, etc.)
+Foundational knowledge of basic Computer Science principles: data structures and algorithms
+Currently pursuing a BS/BA, MS, or PhD in Computer Science or a related field (Graduation date of December 2024 onward)
+Desirable
+
+Prior internship or work experience on backend systems
+Completed relevant project experience (i.e. hack-a-thons, personal projects, GitHub, Open Source, volunteer coding experience etc.)
+Knowledge of technologies such as; Protocol Buffers, gRPC, Apache Kafka, Apache Flink, ElasticSearch, Redis
+Aware of AWS technologies like; DynamoDB, S3, RDS, ElastiCache
+What the job involves
+Tinder interns gain a meaningful experience connecting with their mentor and managers, participating in large-scale projects, and collaborating with other interns in our flagship Tindership hackathon
+As a Backend Intern at Tinder, you will partner directly with senior members of the Engineering team and be empowered to contribute solutions to Tinder's backend system
+We are deeply invested in challenging norms, constantly improving architecture design, exploring emergent tech and ideas, and leveraging new technologies in interesting ways to deliver an app that is widely known the world over
+Collaborate across Tinder Engineering on the expansion of our service platform
+Develop and operate scalable and resilient distributed services that run on Amazon Web Services (AWS)
+Build large scale distributed systems that handle billions of data events a day
+Write unit and integration tests
+Participate in the annual Tindership Hackathon, presenting with your team to the entire Tinder team and panel of executives

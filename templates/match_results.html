@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.back-btn {
+    cursor: pointer;
+    position: absolute; /* Position it absolutely within the container */
+    top: 10px; /* Adjust distance from the top */
+    left: 10px; /* Adjust distance from the left */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; /* Red color for visibility, change as needed */
+    color: #fff; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.matches-container {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 50px;
+    height: 100px;
+    
+}
+
+.match {
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.company-logo {
+    width: 100px; /* Adjust based on actual logo size */
+    height: 100px;
+    margin-right: 20px;
+}
+
+.match-details {
+    flex-grow: 1;
+}
+
+.match-details h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #f00; /* Red color for visibility, change as needed */
+    color: #fff; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+
+.match-item {
+            display: flex;
+            align-items: center;
+            background: #fff; /* or any color you prefer */
+            margin-bottom: 10px; /* spacing between match-items */
+            padding: 20px; /* spacing inside match-items */
+            border-radius: 10px; /* rounded corners */
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1); /* shadow effect */
+        }
+        
+        .match-logo {
+            width: 80px; /* adjust as per your logo's aspect ratio */
+            height: 80px;
+            margin-right: 20px; /* spacing between logo and details */
+        }
+
+        .match-details {
+            flex: 1; /* take the remaining space */
+        }
+
+        .match-details h3 {
+            margin: 0;
+            font-size: 1.2em; /* adjust as needed */
+            color: #333; /* text color */
+        }
+
+        .match-details p {
+            margin: 5px 0; /* spacing */
+        }
+
+        .apply-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; /* Red color for visibility, change as needed */
+    color: #fff; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.apply-button:hover {
+    background: black;
+}
+.back-home-btn {
+            display: block; /* To use the full width for centering text */
+            padding: 10px 20px;
+            background-color: #00eaff; /* Blue color for the button */
+            color: #fff; /* White text */
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px; /* Space above the button */
+            width: 200px; /* Width of the button */
+            margin-left: auto; /* These two margins */
+            margin-right: auto; /* center the button */
+        }
+
+        .back-home-btn:hover {
+            background-color: black; /* Darker blue on hover */
+        }
+    </style>
+   </head>
+   <body>
+
+       <h1>Top Matches</h1>
+     
+       <div class="matches-container">
+            {% for match in matches %}
+               <div class="match">
+                   <img src="{{ match['logo_url'] }}" alt="Company Logo" class="company-logo">
+                   <div class="match-details"> 
+                       <h2>{{ match['job_name'] }}</h2>
+                       <!-- Similarity score removed -->
+                       <a href="{{ match['job_url'] }}" target="_blank" class="apply-button">Apply</a>
+                    </div>
+               </div>
+            {% endfor %}
+            <a href="/student_home" class="back-home-btn">Back Home</a>
+       </div>
+   </body>
+   </html>

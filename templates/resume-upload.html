@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Start Matching</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #82DEE4; /* Light blue background */
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .upload-container {
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 600px; /* Adjust width as needed */
+            height: 400px; /* Adjust height as needed */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Distributes space evenly */
+        }
+        .upload-box {
+            border: 2px dashed #BBBBBB;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            position: relative; /* Allows absolute positioning inside */
+            height: 250px; /* Adjust height as needed */
+        }
+        .upload-box img {
+            width: auto; /* Adjust as needed */
+            height: 150px; /* Adjust to match the design */
+            margin-bottom: 10px;
+        }
+        .upload-instructions {
+            margin-top: 20px;
+            color: #333333;
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+        }
+        .submit-btn {
+            background-color: #000000;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            width: 50%; /* Adjust button width as needed */
+            margin: 0px; /* Center the button */
+        }
+        input[type="file"] {
+            opacity: 0; /* Hide the default file input */
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: pointer;
+        }
+       
+        #upload-message {
+            display: none; /* Initially hidden */
+            margin-top: 0px;
+            font-weight: bold;
+        }
+        #loading {
+        display: none; /* Initially hidden */
+        margin-top: 50px;
+        font-size: 24px; /* Larger font size */
+        font-weight: bold;
+        color: #000000;
+        text-align: center;
+    }
+
+    .loader {
+        border: 5px solid #000000; /* Light grey */
+        border-top: 5px solid #82DEE4; /* Blue */
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 2s linear infinite;
+        margin: 0 auto; /* Center the loader */
+        margin-top: 20px;
+
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    .back-btn {
+    padding: 5px 10px; /* Smaller padding for a smaller button */
+    background-color: #f3f3f3;
+    color: #333;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute; /* Position it absolutely within the container */
+    top: 10px; /* Adjust distance from the top */
+    left: 10px; /* Adjust distance from the left */
+}
+    </style>
+ <script>
+     function goBack() {
+            window.history.back();
+        }
+    function handleFileChange() {
+        var fileInput = document.getElementById('resume');
+        if (fileInput.files.length > 0) {
+            document.getElementById('upload-message').style.display = 'block';
+        }
+    }
+
+    function showLoading() {
+        document.getElementById('loading').style.display = 'block';
+        document.getElementById('loading').innerHTML = '<div class="loader"></div>Matching...';
+        setTimeout(function() {
+            document.getElementById('upload-form').submit();
+        }, 5000); // 30 seconds
+        return false; // Prevent immediate form submission
+    }
+</script>
+</head>
+<body>
+<div class="upload-container">
+    <button onclick="goBack()" class="back-btn">Back</button>
+    <h3>UPLOAD YOUR RESUME</h3>
+    <form id="upload-form" action="/match-results" method="post" enctype="multipart/form-data" onsubmit="return showLoading();">
+        <div class="upload-box">
+            <label for="resume">
+                <img src="https://i.ibb.co/pddT8fy/Untitled-design-37.png" alt="Upload Icon" />
+                <input type="file" id="resume" name="resume" required onchange="handleFileChange();">
+                <p class="upload-instructions">Drag a file here, or Choose a file to upload</p>
+                <p id="upload-message">File uploaded</p>
+
+            </label>
+        </div>
+        <button type="submit" class="submit-btn">Find my match</button>
+    </form>
+    <div id="loading">Matching...</div>
+</div>
+</body>
+</html>

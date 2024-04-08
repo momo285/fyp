@@ -1,0 +1,39 @@
+Objective:
+Aspiring AI and machine learning enthusiast currently pursuing a Bachelor’s degree in Artificial Intelligence at the University of Tech. Seeking internship opportunities to apply my knowledge in real-world projects and further develop my skills in machine learning, data analysis, and algorithm design.
+
+Education:
+
+Bachelor of Science in Artificial Intelligence
+University of Tech, Expected Graduation: May 2025
+GPA: 3.8/4.0
+Relevant Coursework: Machine Learning, Data Structures and Algorithms, Statistics for Data Science, Neural Networks, Computer Vision.
+Projects:
+
+AI Chatbot (Capstone Project):
+Developed an AI chatbot using Python and TensorFlow. Integrated natural language processing capabilities for efficient user interaction.
+Image Classification with CNN:
+Utilized convolutional neural networks to classify images from the CIFAR-10 dataset with an accuracy of 85%.
+Stock Market Prediction using LSTM:
+Designed a model using Long Short-Term Memory networks to predict stock market trends based on historical data.
+Technical Skills:
+
+Programming Languages: Python, Java, C++
+Tools and Libraries: TensorFlow, Keras, PyTorch, Scikit-Learn, Pandas, NumPy
+Data Analysis: Proficient in data preprocessing, visualization (using Matplotlib and Seaborn), and statistical analysis.
+Databases: MySQL, MongoDB
+Work Experience:
+
+AI Research Intern - Tech Innovations Inc., June 2023 - August 2023
+Assisted in developing machine learning models for predictive analytics in retail. Contributed to data preprocessing and model tuning.
+Certifications:
+
+Machine Learning by Stanford University on Coursera
+Deep Learning Specialization by deeplearning.ai on Coursera
+Extracurricular Activities:
+
+Member of the University AI Club, participated in various hackathons and coding competitions.
+Volunteer tutor for introductory programming and data science courses.
+Languages:
+
+English (Fluent)
+Spanish (Intermediate)

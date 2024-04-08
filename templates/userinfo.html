@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Additional Information</title>
+</head>
+<style>
+    /* Add this within a <style> tag in the head or an external stylesheet */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+input[type="text"] {
+    margin: 10px 0;
+    padding: 10px;
+    width: 50%;
+}
+button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Information</title>
+</head>
+<body>
+    <h2>Tell us More about You before Entering</h2>
+    <form action="{{ url_for('process_info') }}" method="post">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.first_name.label }} {{ form.first_name(size=32) }}
+        </div>
+        <div>
+            {{ form.last_name.label }} {{ form.last_name(size=32) }}
+        </div>
+        <div>
+            {{ form.university.label }} {{ form.university(size=32) }}
+        </div>
+        <div>
+            {{ form.degree_program.label }} {{ form.degree_program(size=32) }}
+        </div>
+        <div>
+            {{ form.year_of_graduation.label }} {{ form.year_of_graduation(size=32) }}
+        </div>
+        <div>
+            {{ form. }} {{ form.year_of_graduation(size=32) }}
+        </div>
+        <div>
+            {{ form.submit }}
+        </div>
+    </form>
+</body>
+</html>
+

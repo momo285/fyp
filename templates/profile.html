@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .profile-container {
+            max-width: 400px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .info-group {
+            margin-bottom: 10px;
+        }
+        .info-group label {
+            font-weight: bold;
+            display: block;
+        }
+        .info-group p {
+            background: #e9e9e9;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .info-group a {
+            display: inline-block;
+            margin-top: 5px;
+            text-decoration: none;
+            color: #333;
+        }
+        .button {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            display: block;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <h2>Personal Details</h2>
+        <div class="info-group">
+            <label>Email</label>
+            <p>{{ user.email }}</p>
+        </div>
+        <div class="info-group">
+            <label>Name</label>
+            <p>{{ user.first_name }} {{ user.last_name }}</p>
+        </div>
+        <div class="info-group">
+            <label>University</label>
+            <p>{{ user.university }}</p>
+        </div>
+        <div class="info-group">
+            <label>Degree Programme</label>
+            <p>{{ user.degree_program }}</p>
+        </div>
+        <div class="info-group">
+            <label>Year of Graduation</label>
+            <p>{{ user.year_of_graduation }}</p>
+        
+</body>
+</html>

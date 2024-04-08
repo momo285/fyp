@@ -1,0 +1,57 @@
+Why join our Data team?
+
+Deel is a fast-growing company with a developing Data Science team, which gives the opportunity to contribute to our practices, direction, and tooling selection
+
+The nature of the role will be mostly project focused, so a lot of opportunity to dive deep into a single problem and solve it properly
+
+This role in particular aims to develop data insights from a large salary grouping. There’s scope to define how the data pipelines will work, and what statistical techniques and ML approaches to use
+
+Over 90% of the team’s work makes it to production which is rare for Data science/AI teams, we aim to deliver value each quarter
+
+Responsibilities
+
+Solve real world problems using Data Science and statistical techniques
+
+Implement functionality which can be served in production for internal customers as well as external customers
+
+Designing, building and maintaining data sets
+
+Data cleaning & modelling
+
+Feature engineering
+
+Feature extraction
+
+Building end-to-end data & machine learning pipelines
+
+Conduct reproducible research
+
+Collaborate with Engineering, Operations, Product Management and other functions in the company to deliver algorithmic solutions
+
+Apply software engineering practices in our code that implements our research and its infrastructure
+
+Produce high quality, clean, maintainable reproducible research and code
+
+Requirements
+
+High proficiency in Python and its data science stack.
+
+Background and experience in data/backend engineering, ideally in production environments (3+ years) (Mid/Senior Level role)
+
+Background and hands-on experience (2+ years) in implementing research and algorithms in Python, specifically in information retrieval, text processing, NLP, and machine learning
+
+Experience with developing AI solutions across a variety of domains
+
+Track record of good written and verbal communication of complex things in a simple way as well as ability to collaborate well with people from different backgrounds and professions
+
+A Bachelor’s degree or higher
+
+Must have hands on experience working with SQL
+
+Must have hands on experience working with Python (Preferably with Pandas)
+
+Must be strong at applying statistical methods to data
+
+Must be strong with data pipelining
+
+Must be an independent thinker and have the ability to work independently to solve problems

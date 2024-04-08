@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            background-color: #f0f0f0;
+            position: relative;
+        }
+        .header {
+            color: #333;
+            font-size: 2em;
+            margin: 20px 0;
+        }
+        .card_match {
+    background-color: #DEE8FF;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 10px;
+    width: 600px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Aligns items on the main axis */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card_match_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Distributes space above and below the text and button */
+}
+
+
+
+.card_match_img {
+            width: 200px;
+            height: 200px;
+         align-self: flex-end;
+        }
+
+
+        .button_match {
+    padding: 10px 20px; /* Adjust padding */
+    margin-top: 20px; /* Adds space above the button */
+    border: none;
+    border-radius: 40px; /* Rounded corners */
+    font-size: 18px; /* Large text */
+    color: #fff; /* White text */
+    background-color: #000; /* Black background */
+    text-transform: uppercase;
+    cursor: pointer; /* Changes cursor to pointer */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width: 65px;
+}
+
+.button_match:hover {
+    background-color: #ffffff;
+            color: #000000; /* Adjust text color */
+}
+
+
+
+        .card_board{
+            background-color: #82DEE4;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 10px;
+    width: 600px; /* Adjust as needed */
+    height: 270px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Aligns items on the main axis */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+
+
+    
+        .card_board_img {
+            width: 300px;
+            height: 300px;
+            margin-bottom: 15px;
+        }
+
+
+        .profile-card {
+    background-color: #F5F5F5; /* Your chosen color */
+    width: 200px; /* Adjust width as necessary */
+    height: 600px; /* Adjust height to match the combined height of other cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px; /* Adjust as necessary */
+    margin-left: 20px; /* Space from the adjacent container */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row; /* Aligns children containers horizontally */
+    align-items: start;
+    justify-content: center;
+    gap: 20px; /* Adds space between the main containers */
+}
+
+/* Vertical stack for the match and job board containers */
+.vertical-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Adds space between the vertical containers */
+}
+
+.main-container {
+            display: flex;
+            flex-direction: row; /* Aligns children containers horizontally */
+            align-items: flex-start;
+            justify-content: center;
+            gap: 20px; /* Adds space between the children containers */
+            padding: 20px;
+            max-width: 1200px; /* or the max width you prefer */
+            width: 100%;
+        }
+
+        .profile-card {
+            /* Adjustments to the profile card if necessary */
+            height: 400px;
+            width: 200px;/* Adjust height to be the same as the card_match if necessary */
+            /* ... */
+        }
+
+        .profile-section {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile-section img {
+            border-radius: 50%;
+            width: 50px;
+            height: auto;
+        }
+        .profile-section a {
+            text-decoration: none;
+            color: #333;
+            margin-top: 10px;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 30px; /* Adjust padding */
+            margin: 10px;
+            border: none;
+            width: fit-content;
+            border-radius: 20px; /* Adjust border radius */
+            font-size: 18px; /* Adjust font size */
+            font-weight: bold; /* Adjust font weight */
+            color: #fff; /* Adjust text color */
+            background-color: #000; /* Default black, replace with actual color */
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #ffffff;
+            color: #000000; /* Adjust text color */
+
+        }
+
+        .logout-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #f00; /* Red color for visibility, change as needed */
+    color: #fff; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <!-- Logout Button -->
+<a href="{{ url_for('logout') }}" class="logout-button">Log Out</a>
+
+    <div class="header">Hello,{{ user.first_name }} {{ user.last_name }}</div>
+<div class="main-container">
+    <div class="vertical-stack">
+    <!-- Start Matching Card -->
+    <div class="card_match">
+        <div class="card_match_content">
+            <h1>Find your perfect Job match</h1>
+            <a href="/values-quiz" class="button">Match</a>
+        </div>
+        <a href="/start-matching"><img src="https://svgshare.com/i/12aK.svg" alt="Start Matching" class = "card_match_img" /></a>
+    </div>
+
+    <div class="profile-card">
+        <a href="/profile"><img src="https://svgshare.com/i/12a2.svg" alt="profile" class = "card_board_img" /></a>
+        <h2>View Profile</h2>
+        <a href="/profile" class="button">View</a>
+</div>
+    </div>
+</body>
+</html>

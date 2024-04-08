@@ -1,0 +1,36 @@
+Backend Developer Internship
+Location: Flexible (Remote/On-site options available)
+
+Duration: 6 months, with the possibility of extension or transition to a full-time role
+
+About Us:
+
+We are a dynamic startup at the forefront of digital innovation, committed to transforming industry standards through cutting-edge technology. Our team is growing, and we're looking for passionate, driven individuals to join us on this journey. If you're eager to learn, contribute to real projects, and make a tangible impact, we'd love to have you.
+
+Role Overview:
+
+As a Backend Developer Intern, you will play a crucial role in our development team, contributing to the architecture, development, and maintenance of our backend systems. You will work closely with our experienced engineers to enhance your coding skills, understand system design, and participate in the lifecycle of software development from concept to deployment.
+
+Responsibilities:
+
+Assist in the development and maintenance of backend services, ensuring high performance and responsiveness to requests from the front-end.
+Contribute to the creation of scalable, secure, and efficient code.
+Collaborate with the frontend team to integrate user-facing elements with server-side logic.
+Participate in code reviews to maintain code quality and encourage best practices.
+Support in the identification and resolution of bottlenecks and bugs.
+Engage in the ongoing learning of backend technologies and coding standards.
+Requirements:
+
+Currently pursuing or recently graduated with a degree in Computer Science, Software Engineering, or a related field.
+Proficiency in backend programming languages such as Python, Java, Node.js, or Ruby.
+Familiarity with database technologies (e.g., MySQL, MongoDB), web servers (e.g., Apache, Nginx), and UI/UX design.
+Strong problem-solving skills and attention to detail.
+Excellent communication and teamwork abilities.
+A passion for technology and an eagerness to learn about new tools and technologies.
+Benefits:
+
+Hands-on experience in a fast-paced, startup environment.
+Opportunity to work on real projects impacting our customers.
+Mentorship from experienced professionals in the field.
+Flexible work hours and a supportive team culture.
+Potential for full-time employment upon successful completion of the internship.

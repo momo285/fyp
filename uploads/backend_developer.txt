@@ -1,0 +1,44 @@
+[Your Name]
+Backend Developer Intern Candidate
+
+[Your Address]
+[City, State, Zip]
+[Your Email]
+[Your Phone Number]
+[LinkedIn Profile]
+[GitHub Profile]
+
+Objective
+Dedicated and proactive Computer Science student with a strong foundation in backend development, particularly in Python and Java. Eager to apply theoretical knowledge and programming skills to real-world applications as a Backend Developer Intern at [Startup Name]. Looking forward to contributing to the development, optimization, and enhancement of backend systems, while gaining hands-on experience in a dynamic startup environment.
+
+Education
+Bachelor of Science in Computer Science
+University of [University Name], [City, State]
+Expected Graduation: [Month, Year]
+
+GPA: [Your GPA] (If above 3.0)
+Relevant Coursework: Data Structures and Algorithms, Database Management Systems, Software Engineering, Web Development, Object-Oriented Programming
+Skills
+Proficient in Python and Java for backend development
+Familiar with RESTful API development and integration
+Knowledgeable in database technologies (MySQL, MongoDB)
+Understanding of version control systems, specifically Git
+Strong problem-solving abilities and analytical skills
+Excellent communication and teamwork capabilities
+Ability to adapt and learn new technologies quickly
+Projects
+[Project Name]
+
+Developed a RESTful API using Flask for a student project platform, enabling efficient data retrieval and manipulation.
+Integrated MongoDB for data storage, emphasizing on scalability and performance.
+[Project Name]
+
+Created a Java-based backend for a mock e-commerce application, implementing MVC architecture to separate concerns and enhance maintainability.
+Utilized MySQL for database management, focusing on optimizing queries for faster response times.
+Work Experience
+Software Development Intern
+[Company Name], [City, State]
+[Month, Year] – [Month, Year]
+
+Assisted in developing and maintaining backend services for a company project, improving overall performance by 15%.
+Collaborated with cross-functional teams to gather requirements and translate them into robust technical solutions.

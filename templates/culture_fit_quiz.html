@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        h4 {
+            color: #333;
+            text-align: center;
+        }
+        form {
+            background-color: #fff;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .options label {
+            display: block;
+            margin: 5px 0;
+        }
+        .submit-button {
+            background-color: #00eaff;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+            width: 100%;
+        }
+        .submit-button:hover {
+            background-color: black;
+        }
+        .next-button {
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .progress-bar-container {
+            margin-bottom: 20px; /* Adds space between the progress bar and the title */
+        }
+        .progress-bar {
+            max-width: 100%; /* Ensures the image is not bigger than its container */
+            height: auto; /* Maintains the aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar-container">
+        <a href="https://ibb.co/dWtRw2w"><img src="https://i.ibb.co/jD5Wb9b/Values-4-1.png" alt="Progress bar" class="progress-bar"></a>
+    <h1>Culture Fit Quiz</h1>
+    <form action="{{ url_for('culture_fit_quiz') }}" method="post">
+        {{ form.hidden_tag() }}
+        {% for question in form %}
+            {% if question.type == "RadioField" %}
+                <div class="question">
+                    <label>{{ question.label }}</label>
+                    <div class="options">
+                        {% for subfield in question %}
+                            <label>
+                                <input type="radio" name="{{ subfield.name }}" value="{{ subfield.data }}"> {{ subfield.label.text }}
+                            </label>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+        <div>
+            <button type="submit" class="submit-button">Submit</button>
+        </div>
+        {% if category %}
+        <div>
+            <p>Your values: {{ category }}</p>
+            <a href="{{ url_for('culture_fit_quiz') }}"><button class="next-button" type="button" >Next</button></a>
+        </div>
+        {% endif %}
+    </form>
+</body>
+</html>

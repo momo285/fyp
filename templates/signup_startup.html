@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Sign Up</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        input, select, textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .button {
+            background-color: #4fc2c7;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #3da5a3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Startup Sign Up</h1>
+        <form id="signupForm">
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <input type="text" id="companyName" name="companyName" placeholder="Company Name" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+
+            <select id="size" name="size" required>
+                <option value="" disabled selected>Size</option>
+                <option value="1-9">1-9</option>
+                <option value="10-99">10-99</option>
+                <option value="100-499">100-499</option>
+            </select>
+            <input type="url" id="url" name="url" placeholder="Company URL" required>
+            <input type="text" id="industry" name="industry" placeholder="Industry" required>
+            <textarea id="values" name="values" placeholder="Describe your startup's core values" required></textarea>
+            <textarea id="vision" name="vision" placeholder="Outline your startup's vision for the future" required></textarea>
+            <textarea id="culture" name="culture" placeholder="Explain your startup's culture" required></textarea>
+
+            <button type="submit" class="button">Sign Up</button>
+        </form>
+    </div>
+
+    <script>
+       document.getElementById('signupForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    const plainFormData = Object.fromEntries(formData.entries());
+    const formDataJsonString = JSON.stringify(plainFormData);
+
+    try {
+        const response = await fetch('/signup/startup', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: formDataJsonString,
+        });
+        if (response.redirected) {
+            window.location.href = response.url;
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('An error occurred while submitting the form.');
+    }
+});
+
+    </script>
+</body>
+</html>

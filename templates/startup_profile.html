@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .profile-container {
+            max-width: 400px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .info-group {
+            margin-bottom: 10px;
+        }
+        .info-group label {
+            font-weight: bold;
+            display: block;
+        }
+        .info-group p {
+            background: #e9e9e9;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .info-group a {
+            display: inline-block;
+            margin-top: 5px;
+            text-decoration: none;
+            color: #333;
+        }
+        .button {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            display: block;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <h2>Startup Details</h2>
+        <div class="info-group">
+            <label>Email</label>
+            <p>{{ startup.email }}</p>
+        </div>
+        <div class="info-group">
+            <label>Name</label>
+            <p>{{ startup.name }}</p>
+        </div>
+        <div class="info-group">
+            <label>Company Name</label>
+            <p>{{ startup.companyName }}</p>
+        </div>
+        <div class="info-group">
+            <label>Size</label>
+            <p>{{ startup.size }}</p>
+        </div>
+        <div class="info-group">
+            <label>Industry</label>
+            <p>{{ startup.industry }}</p>
+        </div>
+        <div class="info-group">
+            <label>URL</label>
+            <p>{{ startup.url }}</p>
+        </div>
+        <div class="info-group">
+    <label>Values</label>
+    <p>{{ startup.values }}</p>
+    <label>Values Category</label>
+    <p>{{ startup.values_category }}</p>
+</div>
+<div class="info-group">
+    <label>Vision</label>
+    <p>{{ startup.vision }}</p>
+    <label>Vision Category</label>
+    <p>{{ startup.vision_category }}</p>
+</div>
+<div class="info-group">
+    <label>Culture</label>
+    <p>{{ startup.culture }}</p>
+    <label>Culture Category</label>
+    <p>{{ startup.culture_category }}</p>
+</div>
+    </div>
+</body>
+</html>

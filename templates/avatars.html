@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Your Avatar</title>
+</head>
+<body>
+    <h1>Select Your Avatar</h1>
+    <form action="/save-avatar" method="post">
+        {% for avatar_url in avatar_urls %}
+            <div>
+                <input type="radio" id="avatar{{loop.index}}" name="avatar" value="{{ avatar_url }}">
+                <label for="avatar{{loop.index}}">
+                    <img src="{{ avatar_url }}" alt="Avatar {{loop.index}}" style="width:100px;">
+                </label>
+            </div>
+        {% endfor %}
+        <input type="submit" value="Save Avatar">
+    </form>
+</body>
+</html>

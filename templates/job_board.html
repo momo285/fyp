@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Board</title>
+    <style>
+        .job-container {
+            border: 1px solid #ddd;
+            padding: 15px;
+            width: 50%;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        .job-container h3 {
+            margin: 0 0 10px 0;
+        }
+        .view-button {
+            padding: 10px 20px;
+            background-color: #000000;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .view-button:hover {
+            background-color: #82DEE4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Job Board</h1>
+    {% for job_name in job_names %}
+        <div class="job-container">
+            <h3>{{ job_name }}</h3>
+            <a href="{{ url_for('job_details', job_name=job_name) }}" class="view-button">View Details</a>
+        </div>
+    {% endfor %}
+</body>
+</html>

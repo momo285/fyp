@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #FAFAFA;
+            padding: 40px 20px;
+            margin: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 10px;
+            font-weight: 500;
+            color: #555;
+        }
+        input[type="file"],
+        input[type="url"] {
+            margin-bottom: 30px;
+            padding: 12px;
+            border-radius: 8px;
+            border: 2px solid #ccc;
+            font-size: 16px;
+            color: #333;
+        }
+        input[type="submit"] {
+            margin-bottom: 0;
+            padding: 15px;
+            border-radius: 8px;
+            border: none;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #82DEE4;
+        }
+        /* Additional styling for placeholder text */
+        ::placeholder {
+            color: #a9a9a9;
+        }
+        /* Style adjustments for better responsiveness */
+        @media (max-width: 640px) {
+            .container {
+                padding: 30px;
+            }
+            body {
+                padding: 20px;
+            }
+        }
+        .back-home-btn {
+            display: block; /* To use the full width for centering text */
+            padding: 10px 20px;
+            background-color: #00eaff; /* Blue color for the button */
+            color: #fff; /* White text */
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px; /* Space above the button */
+            width: 200px; /* Width of the button */
+            margin-left: auto; /* These two margins */
+            margin-right: auto; /* center the button */
+        }
+
+        .back-home-btn:hover {
+            background-color: black; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Job Description and Company Logo</h1>
+        <form id="postJobForm" enctype="multipart/form-data">
+            <label for="job_description">Job Description:</label>
+            <input type="file" id="job_description" name="job_description" required>
+            
+            <label for="company_logo">Company Logo:</label>
+            <input type="file" id="company_logo" name="company_logo" required>
+            
+            <label for="job_url">Job URL:</label>
+            <input type="url" id="job_url" name="job_url">
+            
+            <input type="submit" value="Submit">
+            <div id="formMessage"></div> <!-- Container for the success message -->
+
+            <a href="/startup/home" class="back-home-btn">Back Home</a>
+
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('postJobForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var formData = new FormData(this);
+            fetch('/startup_profile', {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('formMessage').innerHTML = "<p>Job Description and Logo Uploaded Successfully</p>";
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
+</body>
+</html>

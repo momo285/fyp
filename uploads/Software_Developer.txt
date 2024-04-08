@@ -1,0 +1,27 @@
+Who you are
+Currently pursuing a post-secondary degree or diploma in a related field
+You're a customer advocate. You understand and empathize with our customers, always prioritizing your focus on how issues impact them
+You're curious. Like a good detective, you're not satisfied until you understand how and why things work the way they do
+You're collaborative. You inspire others to get involved and up their games. You listen to feedback and make adjustments. You're playing so your whole team wins together
+Analytical Skills: Logical Thinking, Problem Solving, Debugging
+Teamwork / Knowledge Sharing
+Attention To Detail / Focus on Quality
+Eagerness to Learn / Natural Curiosity / Lifelong Learning
+Excellent Communication
+Give & Receive Feedback / Constructive Criticism
+Time / Load / Task Management
+Desirable
+
+Familiarity with one or more portions of our tech stack: React, Node.JS, Python, AngularJS, MySQL, JavaScript, TypeScript, C#
+Familiarity with development collaboration tools such as JIRA and git, and development processes like scrum or Kanban
+Experience in a cloud environment, such as AWS
+Familiarity with SQL
+What the job involves
+As a Software Developer Co-op on the Procurement team at Euna Solutions, you’ll join one of our development teams alongside 2-5 other developers taking product stories from design to shipped
+You’ll work with your team on individual and team goals that improve & enhance our software product. All aspects of our development stack are fair game
+Tackle real-world customer challenges and ship impactful solutions quickly, crafting front-end web apps or back-end services by working from detailed designs to implement rich user experiences
+Design and implement APIs and back-end services
+Develop effective tests & metrics to ensure successful delivery and to monitor & analyze the real-time performance of our platform
+Contribute to your team's success with thoughtful code reviews, thorough documentation, and open knowledge sharing
+Apply and support security best practices
+Position will commence May 7th, 2024

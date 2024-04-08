@@ -1,0 +1,40 @@
+Objective:
+Enthusiastic and dedicated mechanical engineering student at Tech University, with a strong foundation in mechanical design, thermodynamics, and materials science. Seeking an internship position to apply my technical skills and knowledge in a practical environment, while contributing to the success of the company.
+
+Education:
+
+Bachelor of Science in Mechanical Engineering
+Tech University, Expected Graduation: May 2025
+GPA: 3.7/4.0
+Relevant Coursework: Engineering Mechanics, Thermodynamics, Fluid Mechanics, Material Science, CAD and Mechanical Design.
+Projects:
+
+Solar-Powered Vehicle (Capstone Project):
+Led a team of 5 students to design and build a solar-powered vehicle for the Solar Challenge. Responsible for the aerodynamic design and thermal management systems.
+Automated Robotic Arm:
+Designed and assembled a robotic arm with 3D-printed parts for precision handling and assembly tasks. Programmed using Python and Arduino.
+Wind Turbine Efficiency Analysis:
+Conducted a comprehensive study on wind turbine blade designs to optimize efficiency and power output.
+Technical Skills:
+
+CAD Software: SolidWorks, AutoCAD
+Simulation Tools: ANSYS, MATLAB
+Programming: Python, C++, Arduino
+Mechanical Design: Knowledge of designing mechanical systems, gears, and thermodynamic systems.
+Manufacturing Processes: Familiar with CNC machining, welding, and 3D printing.
+Work Experience:
+
+Mechanical Engineering Intern - Innovatech Solutions, June 2023 - August 2023
+Assisted in the design and testing of mechanical components for consumer electronic products. Contributed to prototyping and failure analysis.
+Certifications:
+
+Certified SolidWorks Associate (CSWA)
+MATLAB Fundamentals from MathWorks
+Extracurricular Activities:
+
+Member of Tech University's ASME chapter, participated in several design competitions.
+Volunteer in community outreach programs introducing high school students to engineering concepts.
+Languages:
+
+English (Fluent)
+French (Basic)

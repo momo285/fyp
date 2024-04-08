@@ -1,0 +1,43 @@
+Position: Software Engineer (Machine Learning Focus)
+Industry: Climate-tech Location: Hybrid (Cardiff, London)
+Salary: £65-85k based on experience
+
+About the Company: Our partner is a high-profile Climate-tech startup, leading innovation in building energy management. Leveraging digital twins and advanced data analytics, their virtualised Building Management System (BMS) technology is set to optimise energy usage and reduce carbon emissions in buildings significantly.
+
+The Job Opportunity: We are looking for a passionate developer to contribute to our mission of solving the climate crisis. This role is perfect for post-graduates with at least two years of experience, particularly those with a background in machine learning projects.
+
+Role Details:
+
+Start Date: February/March
+Contract Type: Flexible (Contract or Permanent options)
+Experience: Minimum two years in web platform development (SaaS, marketplace) and machine learning/data pipeline
+Your Profile:
+
+Highly motivated, eager to learn, and improve coding skills
+Determined, persistent, and detail-oriented
+Strong communication skills
+Experience with machine learning frameworks (e.g., Keras, PyTorch) and libraries (TensorFlow, sci-kit-learn) is advantageous
+Proficient in developing and consuming APIs
+Experience with Azure Cloud Services deployment
+Technical Skills Required:
+
+JAVA
+Python
+REST API
+SQL
+Git
+Bonus Skills:
+
+TypeScript (highly valued)
+Model training
+Data processing
+Automated testing
+NoSQL
+Job Perks:
+
+Flexible in-person meetings at our Cardiff office (once/twice a month)
+Be part of a rapidly growing tech startup
+Competitive holidays and perks
+Eligibility for stock options
+Access to our community and senior mentors for training and support
+Join Us: This is your chance to make a real impact in the AI and 3D field, where your work contributes directly to sustainable solutions. We can't wait to hear from you if you're ready to advance your career in a dynamic, fast-paced environment!

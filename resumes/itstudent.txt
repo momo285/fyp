@@ -1,0 +1,36 @@
+Objective:
+Detail-oriented and motivated IT student at City Tech University, with a strong interest in network security and cloud computing. Seeking an internship to gain practical experience in IT infrastructure management and cybersecurity.
+
+Education:
+
+Bachelor of Science in Information Technology
+City Tech University, Expected Graduation: May 2025
+GPA: 3.6/4.0
+Relevant Coursework: Network Security, Cloud Computing, Database Management, System Administration, Web Development.
+Projects:
+
+Cloud-Based Inventory Management System:
+Developed a web-based inventory management system hosted on AWS. Implemented features for real-time tracking, reporting, and data analytics.
+Network Security Audit:
+Conducted a comprehensive security audit for the university's local network. Identified vulnerabilities and proposed enhancements to the firewall configuration.
+Personal Portfolio Website:
+Designed and deployed a personal portfolio website to showcase projects and technical skills. Used HTML, CSS, JavaScript, and integrated a MySQL database.
+Technical Skills:
+
+Networking: Knowledgeable in network configuration, TCP/IP, and firewall management.
+Cloud Platforms: Experience with AWS and Microsoft Azure.
+Programming: Proficient in Python, Java, and JavaScript.
+Database Management: Skilled in SQL, MySQL, and MongoDB.
+Operating Systems: Familiar with Windows, Linux, and macOS administration.
+Work Experience:
+
+IT Support Intern - Tech Solutions Inc., June 2023 - August 2023
+Provided technical support and troubleshooting for software and hardware issues. Assisted in managing the company's internal IT infrastructure.
+Certifications:
+
+CompTIA A+
+Cisco Certified Network Associate (CCNA) - In progress
+Extracurricular Activities:
+
+Active member of the University IT Club, participating in workshops and seminars.
+Volunteer IT support for local non-profit organizations.

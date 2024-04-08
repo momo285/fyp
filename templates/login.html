@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+       body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.left-section {
+    flex: 1;
+    padding-right: 50px; /* Adjust as per your design */
+    justify-content: center;
+
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.login-container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 350px; /* Adjust width as needed */
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.5em;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.alert {
+    color: green;
+    margin-top: 10px;
+}
+
+a {
+    display: block;
+    margin-top: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.logo {
+            width: 150px; /* Adjust logo size */
+            height: 100px;
+            margin-bottom: 0px;
+        
+        }
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <a href="https://ibb.co/YbdpHfb"><img src="https://i.ibb.co/t328VY3/25b4d93a-964a-4715-8b19-f5b803c2dd48.png" alt="Jigsaw Careers Logo" class="logo"></a>
+
+            <h1>Find your perfect match!</h1>
+            <p>Unlocking growth opportunities, is just an email & password away.</p>
+            <!-- Include your image here -->
+        </div>
+        <div class="right-section">
+            <div class="login-container">
+                <h2>Login </h2>
+                <form action="{{ url_for('login') }}" method="post">
+                    {{ form.hidden_tag() }}
+                    <div class="form-group">
+                        {{ form.email.label }}
+                        {{ form.email(class="form-control") }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.password.label }}
+                        {{ form.password(class="form-control") }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.submit(class="btn") }}
+                    </div>
+                    {% for message in get_flashed_messages() %}
+                    <div class="alert">{{ message }}</div>
+                    {% endfor %}
+                </form>
+                <a href="/choose">Haven't got an account? Sign up</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function chooseSignupType() {
+            var userType = prompt("Are you a startup or a student? Type 'startup' or 'student'");
+            if(userType.toLowerCase() === 'startup') {
+                window.location.href = '/signup/startup'; // Change this to your startup signup page URL
+            } else if(userType.toLowerCase() === 'student') {
+                window.location.href = '/signup/student'; // Change this to your student signup page URL
+            } else {
+                alert("Please enter 'startup' or 'student' to proceed.");
+            }
+        }
+        </script>
+</body>
+</html>
+
